@@ -143,7 +143,7 @@ const portfolioData = {
       href: "mailto:keithrick.mariano@hotmail.com"
     },
     {
-      label: "Phone",
+      label: "Phone or WhatsApp",
       value: "+63 9389734983",
       href: "tel:+639389734983"
     },
