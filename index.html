@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hervie Mariano</title>
+  <meta
+    name="description"
+    content="A responsive personal portfolio template that is easy to update with your own details."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Hervie Mariano</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#job-history">Job History</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-orb" aria-hidden="true"></span>
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow" id="eyebrow"></p>
+          <h1 id="name"></h1>
+          <p class="hero-role" id="role"></p>
+          <p class="hero-summary" id="summary"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Get in touch</a>
+            <a class="button button-secondary" href="#projects">View projects</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <p class="hero-card-label">Quick Snapshot</p>
+          <div class="snapshot-grid" id="stats"></div>
+        </aside>
+      </section>
+
+      <section class="content-grid">
+        <section class="panel section-card" id="about">
+          <div class="section-heading">
+            <p class="section-tag">Profile</p>
+            <h2>About Me</h2>
+          </div>
+          <div id="aboutContent" class="stack-text"></div>
+          <div class="detail-strip" id="details"></div>
+        </section>
+
+        <section class="panel section-card" id="education">
+          <div class="section-heading">
+            <p class="section-tag">Learning</p>
+            <h2>Educational Background</h2>
+          </div>
+          <div class="timeline" id="educationList"></div>
+        </section>
+      </section>
+
+      <section class="panel section-card" id="job-history">
+        <div class="section-heading">
+          <p class="section-tag">Experience</p>
+          <h2>Job History</h2>
+        </div>
+        <div class="job-history-grid" id="jobHistoryList"></div>
+      </section>
+
+      <section class="panel section-card" id="achievements">
+        <div class="section-heading">
+          <p class="section-tag">Milestones</p>
+          <h2>Achievements</h2>
+        </div>
+        <div class="achievement-grid" id="achievementList"></div>
+      </section>
+
+      <section class="content-grid">
+        <section class="panel section-card" id="skills">
+          <div class="section-heading">
+            <p class="section-tag">Strengths</p>
+            <h2>Skills</h2>
+          </div>
+          <div class="chip-list" id="skillsList"></div>
+        </section>
+
+        <section class="panel section-card" id="projects">
+          <div class="section-heading">
+            <p class="section-tag">Work</p>
+            <h2>Projects</h2>
+          </div>
+          <div class="project-list" id="projectList"></div>
+        </section>
+      </section>
+
+      <section class="panel contact-panel" id="contact">
+        <div>
+          <p class="section-tag">Reach Out</p>
+          <h2>Contact</h2>
+          <p class="contact-copy" id="contactMessage"></p>
+        </div>
+        <div class="contact-links" id="contactLinks"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
